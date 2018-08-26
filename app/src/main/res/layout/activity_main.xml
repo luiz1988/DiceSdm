@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/throw_dice_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animationCache="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Selecione o numero de dados"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/numDadosSpinner"
+        android:entries="@array/numero_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Insira uma face Sorteada"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/numFacesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_horizontal"
+        android:text="@string/main_title"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="jogarDado"
+        android:text="Jogar" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/resultadoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:contentDescription="resultado"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/resultado2ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:contentDescription="@string/resultado"
+        android:visibility="gone"
+        app:srcCompat="@android:color/transparent" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DiceSdm</string>
+    <string name="main_title">Click no Botão</string>
+    <string name="face_sorteada">Face sorteada:</string>
+    <string name="resultado">Resultado</string>
+    <string-array name="numero_dados">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
